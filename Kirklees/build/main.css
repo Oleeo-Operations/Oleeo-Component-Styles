@@ -92,6 +92,7 @@
 }
 
 .homepage-tiles .homepage-tile .homepage-tile-inner .homepage-tile-heading {
+  width: 100%;
   font-size: 1.3rem;
 }
 

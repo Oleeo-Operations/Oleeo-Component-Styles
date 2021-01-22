@@ -1,7 +1,10 @@
 .homepage-tiles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  @include breakpoint(md) {
+    justify-content: space-between;
+  }
   .homepage-tile {
     flex-basis: 250px;
     height: 250px;
@@ -28,6 +31,7 @@
       text-decoration: none;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
       .homepage-tile-heading {
         font-size: 1.3rem;
         width: 100%;

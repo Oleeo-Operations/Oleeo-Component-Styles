@@ -10,6 +10,11 @@
   overflow: hidden;
 }
 
+.sr-only:focus,
+.visually-hidden:focus {
+  clip: none;
+}
+
 .modal-close {
   padding: 0.5rem;
   background: transparent;

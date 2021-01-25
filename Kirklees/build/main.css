@@ -16,7 +16,8 @@
 }
 
 button:focus,
-a:focus {
+a:focus,
+.w-dropdown-toggle:focus {
   z-index: 9999;
   outline: 6px solid #ffbf47;
   outline-offset: -2px;

@@ -15,6 +15,13 @@
   clip: auto;
 }
 
+button:focus,
+a:focus {
+  z-index: 9999;
+  outline: 6px solid #ffbf47;
+  outline-offset: -2px;
+}
+
 .modal-close {
   padding: 0.5rem;
   background: transparent;

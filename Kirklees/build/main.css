@@ -212,3 +212,8 @@
     flex-basis: 50%;
   }
 }
+
+.vacancy-item .vacancy-information .vacancy-information-column .vacancy-info-key {
+  font-size: 0.85rem;
+  font-style: italic;
+}

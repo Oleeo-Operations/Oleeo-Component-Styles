@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: center;
+  justify-content: space-between;
   .vacancy-item {
     width: 100%;
-    padding: 1rem;
+    margin-top: 1rem;
     @include breakpoint(md) {
       width: 50%;
     }

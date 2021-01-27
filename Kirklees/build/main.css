@@ -162,6 +162,7 @@ a:focus,
 .vacancy-listing .vacancy-item .vacancy-item-content {
   padding: 1rem;
   height: 100%;
+  background-color: #fff;
   -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.125);
   -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.125);
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.125);
@@ -190,6 +191,11 @@ a:focus,
 .vacancy-listing .vacancy-item .vacancy-info-item .item-value {
   display: inline-block;
   margin-left: 0.25rem;
+}
+
+.modal {
+  z-index: 9999;
+  background: #fff;
 }
 
 .vacancy-item .apply-button {

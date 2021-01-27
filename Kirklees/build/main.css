@@ -149,13 +149,17 @@ a:focus,
 }
 
 .vacancy-listing .vacancy-item {
-  width: 100%;
+  width: -webkit-calc(100% - 1rem);
+  width: -moz-calc(100% - 1rem);
+  width: calc(100% - 1rem);
   margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   .vacancy-listing .vacancy-item {
-    width: 50%;
+    width: -webkit-calc(50% - 1rem);
+    width: -moz-calc(50% - 1rem);
+    width: calc(50% - 1rem);
   }
 }
 

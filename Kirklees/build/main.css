@@ -57,6 +57,10 @@ a:focus,
   }
 }
 
+.homepage-tiles .content-wrapper {
+  width: 100%;
+}
+
 .homepage-tiles .homepage-tile {
   margin: 1rem 0;
   height: 250px;

@@ -5,6 +5,9 @@
   @include breakpoint(md) {
     justify-content: space-between;
   }
+  .content-wrapper {
+    width: 100%;
+  }
   .homepage-tile {
     flex-basis: 250px;
     height: 250px;

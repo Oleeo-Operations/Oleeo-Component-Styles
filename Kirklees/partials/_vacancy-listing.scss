@@ -2,7 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: center;
+  @include breakpoint(md) {
+    justify-content: space-between;
+  }
   .vacancy-item {
     width: calc(100% - 1rem);
     margin-top: 1rem;

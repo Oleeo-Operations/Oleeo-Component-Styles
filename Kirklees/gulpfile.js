@@ -19,7 +19,7 @@ gulp.task('compile', () => {
     .src('*.scss')
     .pipe(changed('./build'))
     .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./build'));
 });
@@ -35,15 +35,15 @@ gulp.task('prettify', () => {
     .src('./build/*.css')
     .pipe(
       cssbeautify({
-        indent: '  '
+        indent: '  ',
       })
     )
     .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(
     ['./**/*.scss', './partials/*.scss'],
-    gulp.series(['compile', 'css', 'prettify'])
+    gulp.series(['compile', 'css'])
   );
 });
